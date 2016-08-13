@@ -1,11 +1,11 @@
 # Titan MjpegClient
-A very fast MjpgServer library written in c++...
-Created by: David Smerkous
+A very fast MjpgServer library written in c++... <br>
+Created by: **David Smerkous**
 
 ## Intro
 This is the main counterpart to the Titan MjpegServer but can also connect
 to any other mjpeg stream. Here is the server: https://github.com/smerkousdavid/Titan-MjpegServer
-This was built using gcc but should be compatible cross platform with the help of boost libs
+This was built using gcc but should be compatible cross platform with the help of boost libs.
 
 ## Requirements
 The Titan MjpegClient **requires**
@@ -24,9 +24,9 @@ Here are the steps to install the Titan MjpgClient
    * Copy mjpgclient.cpp and mjpgclient.h into your project:
 
 
-     ```cd Titan-MjpegClient;
+     cd Titan-MjpegClient;
      cp mjpgclient.cpp ~/myproject/src;
-     cp mjpgclient.h ~/myproject/src```
+     cp mjpgclient.h ~/myproject/src
 
    * Add linkers:
 	If building from source you must include all boost libs and all opencv libs (Windows can use world dll*)
