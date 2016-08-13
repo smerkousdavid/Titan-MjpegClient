@@ -10,31 +10,31 @@ This was built using gcc but should be compatible cross platform with the help o
 ## Requirements
 The Titan MjpegClient **requires**
 
-    * C++11 standards to be built in (gcc flag... -std=c++11)
-    * Boost libraries 1.54.0 and up (Built in 55)
-    * OpenCv 3.10
+   * C++11 standards to be built in (gcc flag... -std=c++11)
+   * Boost libraries 1.54.0 and up (Built in 55)
+   * OpenCv 3.10
 
 ## Installation
 Here are the steps to install the Titan MjpgClient
-    1. Download libs: 
+   * Download libs: 
 
 
-         git clone https://github.com/smerkousdavid/Titan-MjpegClient
-    
-    2. Copy mjpgclient.cpp and mjpgclient.h into your project:
+       `git clone https://github.com/smerkousdavid/Titan-MjpegClient`
 
-	
-	cd Titan-MjpegClient
-	cp mjpgclient.cpp ~/myproject/src
-	cp mjpgclient.h ~/myproject/src
+   * Copy mjpgclient.cpp and mjpgclient.h into your project:
 
-    3. Add linkers:
+
+     ```cd Titan-MjpegClient;
+     cp mjpgclient.cpp ~/myproject/src;
+     cp mjpgclient.h ~/myproject/src```
+
+   * Add linkers:
 	If building from source you must include all boost libs and all opencv libs (Windows can use world dll*)
         Example g++ build option:
 
 
         -s /usr/lib/x86_64-linux-gnu/libboost_math_tr1.so /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_iostreams.so /usr/lib/x86_64-linux-gnu/libboost_regex.so /usr/lib/x86_64-linux-gnu/libboost_signals.so /usr/lib/x86_64-linux-gnu/libboost_thread.so /usr/lib/x86_64-linux-gnu/libboost_locale.so /usr/lib/x86_64-linux-gnu/libboost_timer.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/local/lib/libopencv_imgproc.so.3.1.0 /usr/local/lib/libopencv_core.so.3.1.0 /usr/local/lib/libopencv_imgcodecs.so.3.1.0 /usr/local/lib/libopencv_videoio.so.3.1.0 /usr/local/lib/libopencv_features2d.so.3.1.0 /usr/local/lib/libopencv_highgui.so.3.1.0 /usr/local/lib/libopencv_flann.so.3.1.0 /usr/local/lib/libopencv_objdetect.so.3.1.0 /usr/local/lib/libopencv_ml.so.3.1.0 /usr/local/lib/libopencv_shape.so.3.1.0 /usr/local/lib/libopencv_photo.so.3.1.0 /usr/local/lib/libopencv_calib3d.so.3.1.0 /usr/local/lib/libopencv_videostab.so.3.1.0 /usr/local/lib/libopencv_superres.so.3.1.0 /usr/local/lib/libopencv_stitching.so.3.1.0
-    4. You're done:
+   * You're done:
 	Just add the mjpgserver.h into your project
 
 ## Example
@@ -43,7 +43,7 @@ Here are the steps to install the Titan MjpgClient
 
 
     int main(int argc, char *argv[]) {
-	//example stream http://localhost:8080/mjpg
+    	//example stream http://localhost:8080/mjpg
 
         const char ip[] = "http://localhost"; //Ip base of stream
         int port = 8081; //Port of stream
